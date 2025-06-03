@@ -18,7 +18,7 @@ function Book() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await axios.post('http://localhost:4000/book', {
+      const response = await axios.post('https://turnos-facil-demo.onrender.com/book', {
         ...formData,
         date: formData.date?.toISOString(),
       }, { timeout: 3000 });

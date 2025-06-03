@@ -10,7 +10,7 @@ function MyBookings() {
   const fetchBookings = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get(`http://localhost:4000/bookings?email=${email}`);
+      const response = await axios.get(`https://turnos-facil-demo.onrender.com/bookings?email=${email}`);
       setBookings(response.data.bookings);
     } catch (error) {
       alert(`Error fetching bookings: ${error.message}`);
